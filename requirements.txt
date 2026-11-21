@@ -1,0 +1,10 @@
+Flask
+mysql-connector-python
+bcrypt
+pyotp
+qrcode
+<<<<<<< HEAD
+pillow
+=======
+pillow
+>>>>>>> 45b1b4cceecba43cdab31f94df744c997c29af8a
