@@ -1,4 +1,4 @@
- import os
+import os
 import subprocess
 import bcrypt
 import pyotp
@@ -11,7 +11,6 @@ from flask import Flask, request, session, redirect, url_for, render_template_st
 import mysql.connector
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
 load_dotenv()
 
 app = Flask(__name__)
@@ -20,7 +19,7 @@ app.secret_key = 'replace_with_a_random_secret_key'
 DB_CONFIG = {
     'host': os.environ.get('DB_HOST', 'mysql-f55ad75-charlotteosei070-a506.h.aivencloud.com'),
     'user': os.environ.get('DB_USER', 'avnadmin'),
-        'password': os.getenv('DB_PASSWORD'),    
+    'password': os.getenv('DB_PASSWORD'),  
     'database': os.environ.get('DB_NAME', 'defaultdb'),
     'port': 16380,
     'ssl_disabled': False
